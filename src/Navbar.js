@@ -1,18 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  Button,
   Drawer,
   DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
   useDisclosure,
   Icon,
+  DrawerHeader,
 } from "@chakra-ui/react";
-import { FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaLinkedinIn, FaEnvelope, FaFacebookF } from "react-icons/fa";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -63,36 +61,60 @@ const Navbar = () => {
           <DrawerOverlay />
           <DrawerContent>
             <DrawerCloseButton />
-            <DrawerHeader>Contact me</DrawerHeader>
+            <DrawerHeader />
 
             <DrawerBody>
-              {/* <form
-                id="my-form"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  console.log("submitted");
-                }}
-              >
-                <Input name="nickname" placeholder="Type here..." />
-              </form> */}
-              <p>
-                <Icon as={FaEnvelope} w="8" h="8"></Icon> muhammetacin@gmail.com
-              </p>
-              <a
-                href="https://www.linkedin.com/in/muhammetcin/"
-                target="_blank"
-                rel="noreferrer noopener"
-                alt="linkedin link"
-              >
-                <Icon as={FaLinkedin} w="8" h="8"></Icon> muhammetcin
-              </a>
-            </DrawerBody>
+              <div className="my-10 justify-center">
+                <a
+                  href="https://www.facebook.com/MuhammetAkifCin"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  alt="facebook"
+                >
+                  <Icon
+                    as={FaFacebookF}
+                    w="4"
+                    h="4"
+                    color="blue.500"
+                    m="2"
+                  ></Icon>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/muhammetcin/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  alt="linkedin"
+                >
+                  <Icon
+                    as={FaLinkedinIn}
+                    w="4"
+                    h="4"
+                    color="blue.500"
+                    m="2"
+                  ></Icon>
+                </a>
+              </div>
+              <div>
+                <h3 className="font-bold text-xl my-10">About this sidebar</h3>
+                <p>
+                  Click on the icons above to go to my social media pages or
+                  click on the email address below to send me an email.
+                </p>
+              </div>
 
-            <DrawerFooter justifyContent="center">
-              <Button colorScheme="blue" type="submit" form="my-form">
-                Save
-              </Button>
-            </DrawerFooter>
+              <h3 className="font-bold text-xl my-10">My contact info</h3>
+              <p>
+                <Icon as={FaEnvelope} w="4" h="4" mr="2"></Icon>{" "}
+                <button
+                  onClick={() =>
+                    (window.location = "mailto:muhammetacin@gmail.com")
+                  }
+                  className="hover:underline"
+                >
+                  muhammetacin@gmail.com
+                </button>
+              </p>
+            </DrawerBody>
           </DrawerContent>
         </Drawer>
       ) : (
