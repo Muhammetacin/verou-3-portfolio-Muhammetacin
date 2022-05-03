@@ -9,8 +9,6 @@ const Hero = () => {
       style={{
         backgroundImage:
           "url(https://images.pexels.com/photos/2907879/pexels-photo-2907879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
-        // backgroundImage:
-        //   "url(https://c.tenor.com/aefRndsGWq0AAAAC/minions-happy.gif)",
       }}
     >
       <div className="hero-overlay bg-opacity-50 bg-black"></div>

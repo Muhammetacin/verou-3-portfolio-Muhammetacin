@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router-dom";
+import About from "./About";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
+import Portfolio from "./Portfolio";
 
 function App() {
   return (
@@ -9,8 +11,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Hero />}></Route>
-        <Route path="/about" element={<div>About me page</div>}></Route>
-        <Route path="/portfolio" element={<div>Portfolio</div>}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/portfolio" element={<Portfolio />}></Route>
       </Routes>
     </div>
   );

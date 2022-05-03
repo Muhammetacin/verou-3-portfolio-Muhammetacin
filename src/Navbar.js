@@ -25,6 +25,11 @@ const Navbar = () => {
       <nav>
         <ul className="flex flex-row">
           <li className="pr-3">
+            <Link to="/">
+              <button className="hover:text-error hover:underline">home</button>
+            </Link>
+          </li>
+          <li className="px-3">
             <Link to="about">
               <button className="hover:text-warning hover:underline">
                 about
