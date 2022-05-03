@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {
   Button,
-  Input,
   Drawer,
   DrawerBody,
   DrawerFooter,
@@ -11,7 +10,9 @@ import {
   DrawerContent,
   DrawerCloseButton,
   useDisclosure,
+  Icon,
 } from "@chakra-ui/react";
+import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -60,7 +61,7 @@ const Navbar = () => {
             <DrawerHeader>Contact me</DrawerHeader>
 
             <DrawerBody>
-              <form
+              {/* <form
                 id="my-form"
                 onSubmit={(e) => {
                   e.preventDefault();
@@ -68,7 +69,18 @@ const Navbar = () => {
                 }}
               >
                 <Input name="nickname" placeholder="Type here..." />
-              </form>
+              </form> */}
+              <p>
+                <Icon as={FaEnvelope} w="8" h="8"></Icon> muhammetacin@gmail.com
+              </p>
+              <a
+                href="https://www.linkedin.com/in/muhammetcin/"
+                target="_blank"
+                rel="noreferrer noopener"
+                alt="linkedin link"
+              >
+                <Icon as={FaLinkedin} w="8" h="8"></Icon> muhammetcin
+              </a>
             </DrawerBody>
 
             <DrawerFooter justifyContent="center">
