@@ -20,6 +20,7 @@ const Portfolio = () => {
       title: "Weather App",
       description:
         "Using openweathermap API weather forecasts of cities all over the globe can be known. After selecting a city, it's temperatures, in a graph (ChartJS), and an image of the city are shown (Unsplash API).",
+      link: "https://cins-weatherapp.netlify.app/",
     },
     {
       imageUrl: "./images/rock-paper-scissors-image.png",
@@ -28,6 +29,7 @@ const Portfolio = () => {
       title: "Rock Paper Scissors!",
       description:
         "The famous rock paper scissors game with some extra fun! Pure JavaScript, Bootstrap and Sass.",
+      link: "https://cins-rockpaperscissors.netlify.app/",
     },
     {
       imageUrl: "./images/react-todolist-image.png",
@@ -36,6 +38,7 @@ const Portfolio = () => {
       title: "React App: Todo List",
       description:
         "A classic! A project everyone makes to learn the basics of a new framework/library. An introduction to React with a nice looking todo list. Fully functional and saves all items on the browser localstorage.",
+      link: "https://cins-react-intro.netlify.app/",
     },
   ];
 
