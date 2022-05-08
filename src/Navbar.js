@@ -16,9 +16,9 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   return (
-    <div className="fixed inset-x-0 top-0 flex justify-between py-6 px-12 text-4xl z-10 text-white bg-transparent">
+    <div className="fixed inset-x-0 top-0 flex justify-between py-6 px-12 text-2xl z-10 text-white bg-transparent">
       <Link to="/">
-        <h1>muhammet cin</h1>
+        <h1>&lt;muhammet cin/&gt;</h1>
       </Link>
       <nav>
         <ul className="flex flex-row">

@@ -1,3 +1,11 @@
+import {
+  Wrap,
+  WrapItem,
+  Avatar,
+  Center,
+  AvatarBadge,
+  // Stack,
+} from "@chakra-ui/react";
 import React from "react";
 
 const About = () => {
@@ -12,7 +20,20 @@ const About = () => {
       <div className="hero-overlay bg-opacity-50 bg-black"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-lg">
-          <p>This is about me page. Learn more about me.</p>
+          <Center>
+            <Wrap>
+              <WrapItem>
+                <Avatar size="xl" name='Muhammet Cin'>
+                  <AvatarBadge
+                    boxSize="1.25em"
+                    bg="green.500"
+                    borderColor="green.400"
+                  />
+                </Avatar>
+              </WrapItem>
+            </Wrap>
+          </Center>
+          <h2 className="my-3 text-xl font-semibold">Learn more about me.</h2>
         </div>
       </div>
     </div>
