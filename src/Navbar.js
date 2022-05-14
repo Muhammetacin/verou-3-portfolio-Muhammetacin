@@ -16,11 +16,55 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   return (
-    <div className="fixed inset-x-0 top-0 flex justify-between py-6 px-12 text-2xl z-10 text-white bg-transparent">
+    <div className="fixed inset-x-0 top-0 flex justify-between py-6 px-12 z-10 text-white bg-transparent xl:text-2xl md:text-lg">
       <Link to="/">
         <h1>&lt;muhammet cin/&gt;</h1>
       </Link>
-      <nav>
+
+      <div className="navbar-start">
+        <div className="dropdown">
+          <label tabIndex="0" className="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </label>
+          <ul
+            tabIndex="0"
+            className="menu menu-compact dropdown-content  p-2 shadow bg-base-100 rounded-box w-52 text-black"
+          >
+            <li>
+              <Link to="/">
+                <button>home</button>
+              </Link>
+            </li>
+            <li>
+              <Link to="about">
+                <button>about</button>
+              </Link>
+            </li>
+            <li>
+              <Link to="portfolio">
+                <button>portfolio</button>
+              </Link>
+            </li>
+            <li>
+              <button onClick={onOpen}>contact</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      {/* <nav>
         <ul className="flex flex-row">
           <li className="pr-3">
             <Link to="/">
@@ -50,7 +94,7 @@ const Navbar = () => {
             </button>
           </li>
         </ul>
-      </nav>
+      </nav> */}
       {btnRef ? (
         <Drawer
           isOpen={isOpen}
