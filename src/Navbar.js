@@ -10,7 +10,12 @@ import {
   Icon,
   DrawerHeader,
 } from "@chakra-ui/react";
-import { FaLinkedinIn, FaEnvelope, FaFacebookF } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaEnvelope,
+  FaFacebookF,
+  FaGithub,
+} from "react-icons/fa";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -71,20 +76,20 @@ const Navbar = () => {
         <ul className="lg:flex lg:flex-row hidden">
           <li className="pr-3">
             <Link to="/">
-              <button className="hover:text-error hover:underline">home</button>
+              <button className="hover:text-error hover:underline">Home</button>
             </Link>
           </li>
           <li className="px-3">
             <Link to="about">
               <button className="hover:text-warning hover:underline">
-                about
+                About
               </button>
             </Link>
           </li>
           <li className="px-3">
             <Link to="portfolio">
               <button className="hover:text-secondary hover:underline">
-                portofolio
+                Portofolio
               </button>
             </Link>
           </li>
@@ -93,7 +98,7 @@ const Navbar = () => {
               className="hover:text-accent hover:underline"
               onClick={onOpen}
             >
-              contact
+              Contact
             </button>
           </li>
         </ul>
@@ -139,6 +144,14 @@ const Navbar = () => {
                     color="blue.500"
                     m="2"
                   ></Icon>
+                </a>
+                <a
+                  href="https://github.com/Muhammetacin"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  alt="github"
+                >
+                  <Icon as={FaGithub} w="4" h="4" color="black" m="2"></Icon>
                 </a>
               </div>
               <div>
