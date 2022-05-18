@@ -13,7 +13,7 @@ const Hero = () => {
     >
       <div className="hero-overlay bg-opacity-50 bg-black"></div>
       <div className="hero-content text-center text-neutral-content">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl mx-4">
           <div className="mb-5 text-4xl font-bold">
             <h1 className="mb-5 text-6xl font-bold">Hello World!</h1>
             <h2 className="mb-5 font-bold">

@@ -16,7 +16,7 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   return (
-    <div className="fixed inset-x-0 top-0 flex justify-between py-6 px-12 z-10 text-white bg-transparent xl:text-2xl md:text-lg overscroll-none">
+    <div className="fixed inset-x-0 top-0 flex justify-between py-6 px-12 text-white bg-transparent xl:text-2xl md:text-lg overscroll-none">
       <div className="navbar lg:hidden">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost btn-circle -mt-2">
