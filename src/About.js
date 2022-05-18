@@ -23,7 +23,11 @@ const About = () => {
           <Center>
             <Wrap>
               <WrapItem>
-                <Avatar size="2xl" name="Muhammet Cin">
+                <Avatar
+                  size="2xl"
+                  name="Muhammet Cin"
+                  src="./images/muhammetcinpic.png"
+                >
                   <AvatarBadge
                     boxSize="0.9em"
                     bg="green.500"
