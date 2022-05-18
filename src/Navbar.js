@@ -16,14 +16,10 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   return (
-    <div className="fixed inset-x-0 top-0 flex justify-between py-6 px-12 z-10 text-white bg-transparent xl:text-2xl md:text-lg">
-      <Link to="/">
-        <h1>&lt;muhammet cin/&gt;</h1>
-      </Link>
-
-      <div className="navbar-start">
+    <div className="fixed inset-x-0 top-0 flex justify-between py-6 px-12 z-10 text-white bg-transparent xl:text-2xl md:text-lg overscroll-none">
+      <div className="navbar lg:hidden">
         <div className="dropdown">
-          <label tabIndex="0" className="btn btn-ghost btn-circle">
+          <label tabIndex="0" className="btn btn-ghost btn-circle -mt-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -41,31 +37,38 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex="0"
-            className="menu menu-compact dropdown-content  p-2 shadow bg-base-100 rounded-box w-52 text-black"
+            className="menu menu-compact dropdown-content p-2 shadow bg-base-100 rounded-box w-26 text-black"
           >
             <li>
               <Link to="/">
-                <button>home</button>
+                <button>Home</button>
               </Link>
             </li>
             <li>
               <Link to="about">
-                <button>about</button>
+                <button>About</button>
               </Link>
             </li>
             <li>
               <Link to="portfolio">
-                <button>portfolio</button>
+                <button>Portfolio</button>
               </Link>
             </li>
             <li>
-              <button onClick={onOpen}>contact</button>
+              <button onClick={onOpen}>Contact</button>
             </li>
           </ul>
         </div>
       </div>
-      {/* <nav>
-        <ul className="flex flex-row">
+
+      <div className="flex justify-end w-52 align-center pt-4 lg:pt-0 lg:justify-start">
+        <Link to="/">
+          <h1>Muhammet Cin</h1>
+        </Link>
+      </div>
+
+      <div>
+        <ul className="lg:flex lg:flex-row hidden">
           <li className="pr-3">
             <Link to="/">
               <button className="hover:text-error hover:underline">home</button>
@@ -94,7 +97,7 @@ const Navbar = () => {
             </button>
           </li>
         </ul>
-      </nav> */}
+      </div>
       {btnRef ? (
         <Drawer
           isOpen={isOpen}
