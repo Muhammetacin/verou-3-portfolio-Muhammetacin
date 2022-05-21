@@ -11,8 +11,16 @@ const PortfolioItem = ({ item }) => {
         overflow="hidden"
         bg="gray"
       >
-        <Box boxSize="sm" objectFit="cover">
-          <Image src={item.imageUrl} alt={item.imageAlt} />
+        <Box>
+          <a href={item.link} target="_blank" rel="noopener noreferrer">
+            <Image
+              boxSize="150px"
+              w="450px"
+              objectFit="cover"
+              src={item.imageUrl}
+              alt={item.imageAlt}
+            />
+          </a>
         </Box>
         <Box p="6">
           <Box display="flex" alignItems="baseline">
@@ -39,10 +47,12 @@ const PortfolioItem = ({ item }) => {
             lineHeight="tight"
             isTruncated
           >
-            {item.title}
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
+              {item.title}
+            </a>
           </Box>
 
-          <Box>{item.description}</Box>
+          <Box className="align-stretch">{item.description}</Box>
         </Box>
       </Box>
     </div>

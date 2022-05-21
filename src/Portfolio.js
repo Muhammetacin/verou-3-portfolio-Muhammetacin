@@ -28,7 +28,7 @@ const Portfolio = () => {
       types: ["javascript", "sass", "bootstrap"],
       title: "Rock Paper Scissors!",
       description:
-        "The famous rock paper scissors game with some extra fun! Pure JavaScript, Bootstrap and Sass.",
+        "The famous rock paper scissors game with some extra fun: lizard, spock, hourglass! You can also play with other elements like car-plane-bike. Pure JavaScript, Bootstrap and Sass.",
       link: "https://cins-rockpaperscissors.netlify.app/",
     },
     {
@@ -39,6 +39,33 @@ const Portfolio = () => {
       description:
         "A classic! A project everyone makes to learn the basics of a new framework/library. An introduction to React with a nice looking todo list. Fully functional and saves all items on the browser localstorage.",
       link: "https://cins-react-intro.netlify.app/",
+    },
+    {
+      imageUrl: "./images/react-ecommerce-image.png",
+      imageAlt: "An image with dummy ecommerce app",
+      types: ["react", "tailwindcss", "chakra ui"],
+      title: "React App: ecommerce",
+      description:
+        "Demo of how a webshop can be made using ReactJS with helper libraries like Chakra UI. Skeletons, cards, drawer, create products based on API data (dummy). All can be found here.",
+      link: "https://cins-react-webshop.netlify.app/",
+    },
+    {
+      imageUrl: "./images/react-ecommerce-image.png",
+      imageAlt: "An image with dummy ecommerce app",
+      types: ["react", "tailwindcss", "chakra ui"],
+      title: "React App: ecommerce",
+      description:
+        "Demo of how a webshop can be made using ReactJS with helper libraries like Chakra UI. Skeletons, cards, drawer, create products based on API data (dummy). All can be found here.",
+      link: "https://cins-react-webshop.netlify.app/",
+    },
+    {
+      imageUrl: "./images/react-ecommerce-image.png",
+      imageAlt: "An image with dummy ecommerce app",
+      types: ["react", "tailwindcss, chakra ui"],
+      title: "React App: ecommerce",
+      description:
+        "Demo of how a webshop can be made using ReactJS with helper libraries like Chakra UI. Skeletons, cards, drawer, create products based on API data (dummy). All can be found here.",
+      link: "https://cins-react-webshop.netlify.app/",
     },
   ];
 
@@ -52,7 +79,7 @@ const Portfolio = () => {
     >
       <div className="hero-overlay bg-opacity-50 bg-black"></div>
       <div className="hero-content text-neutral-content">
-        <div className="max-w-full flex items-stretch">
+        <div className="max-w-full">
           {/* <Box
             maxW="sm"
             borderWidth="1px"
@@ -93,9 +120,11 @@ const Portfolio = () => {
               <Box>{weatherApp.description}</Box>
             </Box>
           </Box> */}
-          {portfolioItems.map((item, index) => {
-            return <PortfolioItem key={index} item={item} />;
-          })}
+          <div className="flex items-stretch flex-col flex-wrap lg:flex-row pt-20">
+            {portfolioItems.map((item, index) => {
+              return <PortfolioItem key={index} item={item} />;
+            })}
+          </div>
         </div>
       </div>
     </div>
