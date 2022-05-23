@@ -49,24 +49,24 @@ const Portfolio = () => {
         "Demo of how a webshop can be made using ReactJS with helper libraries like Chakra UI. Skeletons, cards, drawer, create products based on API data (dummy). All can be found here.",
       link: "https://cins-react-webshop.netlify.app/",
     },
-    {
-      imageUrl: "./images/react-ecommerce-image.png",
-      imageAlt: "An image with dummy ecommerce app",
-      types: ["react", "tailwindcss", "chakra ui"],
-      title: "React App: ecommerce",
-      description:
-        "Demo of how a webshop can be made using ReactJS with helper libraries like Chakra UI. Skeletons, cards, drawer, create products based on API data (dummy). All can be found here.",
-      link: "https://cins-react-webshop.netlify.app/",
-    },
-    {
-      imageUrl: "./images/react-ecommerce-image.png",
-      imageAlt: "An image with dummy ecommerce app",
-      types: ["react", "tailwindcss, chakra ui"],
-      title: "React App: ecommerce",
-      description:
-        "Demo of how a webshop can be made using ReactJS with helper libraries like Chakra UI. Skeletons, cards, drawer, create products based on API data (dummy). All can be found here.",
-      link: "https://cins-react-webshop.netlify.app/",
-    },
+    // {
+    //   imageUrl: "./images/react-ecommerce-image.png",
+    //   imageAlt: "An image with dummy ecommerce app",
+    //   types: ["react", "tailwindcss", "chakra ui"],
+    //   title: "React App: ecommerce",
+    //   description:
+    //     "Demo of how a webshop can be made using ReactJS with helper libraries like Chakra UI. Skeletons, cards, drawer, create products based on API data (dummy). All can be found here.",
+    //   link: "https://cins-react-webshop.netlify.app/",
+    // },
+    // {
+    //   imageUrl: "./images/react-ecommerce-image.png",
+    //   imageAlt: "An image with dummy ecommerce app",
+    //   types: ["react", "tailwindcss, chakra ui"],
+    //   title: "React App: ecommerce",
+    //   description:
+    //     "Demo of how a webshop can be made using ReactJS with helper libraries like Chakra UI. Skeletons, cards, drawer, create products based on API data (dummy). All can be found here.",
+    //   link: "https://cins-react-webshop.netlify.app/",
+    // },
   ];
 
   return (

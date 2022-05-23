@@ -19,7 +19,7 @@ const About = () => {
     >
       <div className="hero-overlay bg-opacity-60 bg-black"></div>
       <div className="hero-content text-neutral-content">
-        <div className="max-w-2xl text-lg">
+        <div className="max-w-2xl text-lg mx-8 mt-32 md:mt-0">
           <Center>
             <Wrap>
               <WrapItem>
