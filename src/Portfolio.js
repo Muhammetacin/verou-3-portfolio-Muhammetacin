@@ -15,7 +15,7 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       imageUrl: "./images/weather-app-image.png",
-      imageAlt: "Main page of weather app",
+      imageAlt: "Image of weather app",
       types: ["javascript", "sass", "bootstrap"],
       title: "Weather App",
       description:
@@ -24,7 +24,7 @@ const Portfolio = () => {
     },
     {
       imageUrl: "./images/rock-paper-scissors-image.png",
-      imageAlt: "Main page of rock paper scissors game",
+      imageAlt: "Image of rock paper scissors game",
       types: ["javascript", "sass", "bootstrap"],
       title: "Rock Paper Scissors!",
       description:
@@ -33,7 +33,7 @@ const Portfolio = () => {
     },
     {
       imageUrl: "./images/react-todolist-image.png",
-      imageAlt: "An image with example todo items",
+      imageAlt: "Image with example todo items",
       types: ["react", "tailwindcss"],
       title: "React App: Todo List",
       description:
@@ -42,31 +42,31 @@ const Portfolio = () => {
     },
     {
       imageUrl: "./images/react-ecommerce-image.png",
-      imageAlt: "An image with dummy ecommerce app",
+      imageAlt: "Image with dummy ecommerce app",
       types: ["react", "tailwindcss", "chakra ui"],
       title: "React App: ecommerce",
       description:
         "Demo of how a webshop can be made using ReactJS with helper libraries like Chakra UI. Skeletons, cards, drawer, create products based on API data (dummy). All can be found here.",
       link: "https://cins-react-webshop.netlify.app/",
     },
-    // {
-    //   imageUrl: "./images/react-ecommerce-image.png",
-    //   imageAlt: "An image with dummy ecommerce app",
-    //   types: ["react", "tailwindcss", "chakra ui"],
-    //   title: "React App: ecommerce",
-    //   description:
-    //     "Demo of how a webshop can be made using ReactJS with helper libraries like Chakra UI. Skeletons, cards, drawer, create products based on API data (dummy). All can be found here.",
-    //   link: "https://cins-react-webshop.netlify.app/",
-    // },
-    // {
-    //   imageUrl: "./images/react-ecommerce-image.png",
-    //   imageAlt: "An image with dummy ecommerce app",
-    //   types: ["react", "tailwindcss, chakra ui"],
-    //   title: "React App: ecommerce",
-    //   description:
-    //     "Demo of how a webshop can be made using ReactJS with helper libraries like Chakra UI. Skeletons, cards, drawer, create products based on API data (dummy). All can be found here.",
-    //   link: "https://cins-react-webshop.netlify.app/",
-    // },
+    {
+      imageUrl: "./images/laravel-demo.png",
+      imageAlt: "Image of Laravel demo app",
+      types: ["laravel", "tailwindcss", "mysql", "blade"],
+      title: "Laravel 101: Introduction",
+      description:
+        "An introduction app with Laravel. My first experience with a PHP framework. Using Breeze for authentication and just getting to work with TailwindCSS and Laravel together.",
+      link: "https://laravel-demo.muhammetcin.be/",
+    },
+    {
+      imageUrl: "./images/laravel-blog2.png",
+      imageAlt: "Image of Laravel blog app",
+      types: ["laravel", "tailwindcss", "mysql", "blade"],
+      title: "Laravel Blog: my personal experiences",
+      description:
+        "I always had an idea of having my own blog where I write my journey in programming and coding adventure. I believe this is the way of expressing myself. A good opportunity!",
+      link: "https://laravel-blog.muhammetcin.be/",
+    },
   ];
 
   return (

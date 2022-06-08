@@ -14,8 +14,8 @@ const PortfolioItem = ({ item }) => {
         <Box>
           <a href={item.link} target="_blank" rel="noopener noreferrer">
             <Image
-              boxSize="150px"
-              w="450px"
+              boxSize="250px"
+              w="400px"
               objectFit="cover"
               src={item.imageUrl}
               alt={item.imageAlt}
