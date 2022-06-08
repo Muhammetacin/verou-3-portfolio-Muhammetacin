@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Image, Badge } from "@chakra-ui/react";
+import { Box, Image, Badge, Icon } from "@chakra-ui/react";
+import { FaGithub } from "react-icons/fa";
 
 const PortfolioItem = ({ item }) => {
   return (
@@ -49,6 +50,14 @@ const PortfolioItem = ({ item }) => {
           >
             <a href={item.link} target="_blank" rel="noopener noreferrer">
               {item.title}
+            </a>
+            <a
+              href={item.github_link}
+              target="_blank"
+              rel="noreferrer noopener"
+              alt="github"
+            >
+              <Icon as={FaGithub} w="6" h="6" color="black" m="2"></Icon>
             </a>
           </Box>
 

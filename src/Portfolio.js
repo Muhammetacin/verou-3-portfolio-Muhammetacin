@@ -21,6 +21,8 @@ const Portfolio = () => {
       description:
         "Using openweathermap API weather forecasts of cities all over the globe can be known. After selecting a city, it's temperatures, in a graph (ChartJS), and an image of the city are shown (Unsplash API).",
       link: "https://cins-weatherapp.netlify.app/",
+      github_link:
+        "https://github.com/becodeorg/verou-3-weather-app-Muhammetacin",
     },
     {
       imageUrl: "./images/rock-paper-scissors-image.png",
@@ -30,24 +32,30 @@ const Portfolio = () => {
       description:
         "The famous rock paper scissors game with some extra fun: lizard, spock, hourglass! You can also play with other elements like car-plane-bike. Pure JavaScript, Bootstrap and Sass.",
       link: "https://cins-rockpaperscissors.netlify.app/",
+      github_link:
+        "https://github.com/becodeorg/verou-3-casino-games-Muhammetacin/tree/main/RockPaperScissors",
     },
     {
       imageUrl: "./images/react-todolist-image.png",
       imageAlt: "Image with example todo items",
       types: ["react", "tailwindcss"],
-      title: "React App: Todo List",
+      title: "React 101: Todo List",
       description:
         "A classic! A project everyone makes to learn the basics of a new framework/library. An introduction to React with a nice looking todo list. Fully functional and saves all items on the browser localstorage.",
       link: "https://cins-react-intro.netlify.app/",
+      github_link:
+        "https://github.com/becodeorg/verou-3-react-intro-Muhammetacin",
     },
     {
       imageUrl: "./images/react-ecommerce-image.png",
       imageAlt: "Image with dummy ecommerce app",
       types: ["react", "tailwindcss", "chakra ui"],
-      title: "React App: ecommerce",
+      title: "React: ecommerce",
       description:
         "Demo of how a webshop can be made using ReactJS with helper libraries like Chakra UI. Skeletons, cards, drawer, create products based on API data (dummy). All can be found here.",
       link: "https://cins-react-webshop.netlify.app/",
+      github_link:
+        "https://github.com/becodeorg/verou-3-react-in-practise-Muhammetacin",
     },
     {
       imageUrl: "./images/laravel-demo.png",
@@ -57,15 +65,19 @@ const Portfolio = () => {
       description:
         "An introduction app with Laravel. My first experience with a PHP framework. Using Breeze for authentication and just getting to work with TailwindCSS and Laravel together.",
       link: "https://laravel-demo.muhammetcin.be/",
+      github_link:
+        "https://github.com/becodeorg/verou-3-discovering-laravel-Muhammetacin",
     },
     {
       imageUrl: "./images/laravel-blog2.png",
       imageAlt: "Image of Laravel blog app",
       types: ["laravel", "tailwindcss", "mysql", "blade"],
-      title: "Laravel Blog: my personal experiences",
+      title: "Laravel Blog",
       description:
         "I always had an idea of having my own blog where I write my journey in programming and coding adventure. I believe this is the way of expressing myself. A good opportunity!",
       link: "https://laravel-blog.muhammetcin.be/",
+      github_link:
+        "https://github.com/becodeorg/verou-3-laravel-and-beyond-Muhammetacin",
     },
   ];
 
